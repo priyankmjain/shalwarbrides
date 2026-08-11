@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shalwar Brides – Your Bridal Wear Destination in Sri Lanka</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23B51C2C'/%3E%3Ccircle cx='50' cy='50' r='42' fill='white'/%3E%3Ccircle cx='50' cy='50' r='42' fill='none' stroke='%23BFA060' stroke-width='2.5'/%3E%3Cpath d='M50 18 Q62 26 68 38 Q74 50 68 62 Q62 74 50 82 Q38 74 32 62 Q26 50 32 38 Q38 26 50 18Z' fill='%23B51C2C'/%3E%3Ctext x='50' y='62' font-family='Georgia,serif' font-size='32' fill='%23BFA060' text-anchor='middle' font-weight='bold'%3ES3%3C/text%3E%3C/svg%3E">
+<style>
+:root{--red:#B51C2C;--red-dark:#7A0E1A;--gold:#BFA060;--gold-lt:#d4b578;--light:#fdf5f5;--white:#fff;--border:#f0d5d7;--dark:#1a1a1a;--mid:#4a4a4a;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Jost',sans-serif;color:var(--dark);background:var(--white);overflow-x:hidden;}
+
+/* NAV */
+nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 40px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:999;height:70px;box-shadow:0 2px 12px rgba(181,28,44,.08);}
+.nav-left{display:flex;align-items:center;gap:10px;}
+.nav-left img.logo-img{height:54px;display:block;}
+.nav-logo-text .brand-main{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--dark);}
+.nav-logo-text .brand-sub{font-size:9px;letter-spacing:3px;color:var(--red);text-transform:uppercase;}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:5px;z-index:1001;}
+.hamburger span{display:block;width:25px;height:2px;background:var(--dark);border-radius:2px;transition:.3s;}
+.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px);}
+.hamburger.open span:nth-child(2){opacity:0;}
+.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px);}
+.nav-links{display:flex;align-items:center;gap:4px;}
+.nav-links a{color:var(--mid);text-decoration:none;padding:6px 13px;font-size:12px;letter-spacing:1px;text-transform:uppercase;font-weight:500;transition:.2s;}
+.nav-links a:hover{color:var(--red);}
+.nav-cta{background:var(--red)!important;color:var(--white)!important;border-radius:2px;padding:9px 20px!important;}
+.nav-cta:hover{background:var(--red-dark)!important;}
+
+/* HERO */
+.hero{background:var(--light);min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:60px 20px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 5 L43 37 L75 40 L43 43 L40 75 L37 43 L5 40 L37 37Z' fill='%23B51C2C' fill-opacity='0.04'/%3E%3C/svg%3E") center/80px;}
+.hero-inner{position:relative;z-index:1;max-width:750px;}
+.hero-pre{font-size:11px;letter-spacing:6px;text-transform:uppercase;color:var(--red);margin-bottom:20px;font-weight:500;}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:60px;font-weight:300;line-height:1.15;color:var(--dark);margin-bottom:20px;}
+.hero h1 em{font-style:italic;color:var(--red);}
+.hero .sub{font-size:15px;line-height:1.9;color:var(--mid);max-width:540px;margin:0 auto 36px;font-weight:300;}
+.hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+.btn-red{background:var(--red);color:var(--white);padding:13px 36px;border-radius:2px;text-decoration:none;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:500;transition:.3s;display:inline-block;}
+.btn-red:hover{background:var(--red-dark);}
+.btn-outline{border:1.5px solid var(--dark);color:var(--dark);padding:13px 36px;border-radius:2px;text-decoration:none;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:500;transition:.3s;display:inline-block;}
+.btn-outline:hover{border-color:var(--red);color:var(--red);}
+
+/* STATS */
+.stats{background:var(--red-dark);padding:0 20px;display:flex;justify-content:center;flex-wrap:wrap;}
+.stat-item{padding:18px 32px;border-right:1px solid rgba(255,255,255,.1);text-align:center;}
+.stat-item:last-child{border-right:none;}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--gold-lt);font-weight:600;display:block;line-height:1;}
+.stat-lbl{font-size:9px;letter-spacing:2px;color:rgba(255,255,255,.55);text-transform:uppercase;margin-top:5px;display:block;}
+
+/* SECTIONS */
+section{padding:80px 40px;}
+.sec-head{text-align:center;margin-bottom:55px;}
+.sec-pre{font-size:10px;letter-spacing:5px;text-transform:uppercase;color:var(--red);margin-bottom:12px;}
+.sec-head h2{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:400;color:var(--dark);margin-bottom:14px;}
+.sec-line{width:40px;height:1px;background:var(--red);margin:0 auto;}
+
+/* COLLECTIONS */
+.collections{background:var(--white);}
+.col-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1100px;margin:0 auto;}
+.col-card{background:var(--white);border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:.3s;}
+.col-card:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(181,28,44,.12);}
+.col-img{width:100%;height:220px;object-fit:cover;display:block;}
+.col-body{padding:22px 20px;}
+.col-body h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--dark);margin-bottom:8px;}
+.col-body p{font-size:13px;color:var(--mid);line-height:1.7;font-weight:300;}
+.col-tag{display:inline-block;margin-top:12px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--red);border-bottom:1px solid var(--red);padding-bottom:2px;}
+
+/* ABOUT */
+.about{background:var(--light);}
+.about-inner{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;}
+.about-text p{font-size:15px;line-height:1.95;color:var(--mid);margin-bottom:16px;font-weight:300;}
+.about-text p strong{color:var(--dark);font-weight:600;}
+.usp-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.usp{border-left:3px solid var(--red);padding:14px 16px;background:var(--white);}
+.usp h4{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--dark);margin-bottom:6px;}
+.usp p{font-size:13px;color:var(--mid);line-height:1.6;font-weight:300;}
+
+/* TESTIMONIALS */
+.testimonials{background:var(--red-dark);}
+.testimonials .sec-head h2{color:var(--white);}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1100px;margin:0 auto;}
+.testi-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);padding:32px 28px;border-radius:4px;}
+.stars{color:var(--gold-lt);font-size:13px;margin-bottom:14px;letter-spacing:2px;}
+.testi-card p{font-size:14px;color:rgba(255,255,255,.75);line-height:1.8;font-weight:300;font-style:italic;margin-bottom:18px;}
+.testi-name{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold-lt);}
+
+/* STORES */
+.stores{background:var(--white);}
+.stores-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;max-width:1000px;margin:0 auto;}
+.store-card{border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:.3s;}
+.store-card:hover{box-shadow:0 12px 40px rgba(181,28,44,.1);}
+.store-imgs{display:grid;grid-template-columns:1fr 1fr;height:200px;gap:2px;}
+.store-imgs img{width:100%;height:100%;object-fit:cover;display:block;}
+.store-info{padding:24px;}
+.store-badge{display:inline-block;background:#fdf0f1;color:var(--red);font-size:9px;letter-spacing:2px;text-transform:uppercase;padding:5px 12px;margin-bottom:12px;}
+.store-info h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--dark);margin-bottom:10px;}
+.store-info p{font-size:13px;color:var(--mid);line-height:1.7;margin-bottom:6px;font-weight:300;}
+.store-info p span{font-weight:600;color:var(--dark);}
+.map-btn{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--red);text-decoration:none;border-bottom:1px solid var(--red);padding-bottom:2px;}
+
+/* SOCIAL */
+.social-sec{background:var(--light);padding:70px 40px;text-align:center;}
+.social-sec h2{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:400;color:var(--dark);margin-bottom:8px;}
+.social-sec .sub{font-size:14px;color:var(--mid);margin-bottom:36px;font-weight:300;}
+.social-icons{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;}
+.soc-btn{display:flex;align-items:center;gap:10px;padding:13px 22px;border:1.5px solid var(--border);border-radius:4px;text-decoration:none;color:var(--dark);font-size:13px;font-weight:500;transition:.3s;background:var(--white);min-width:150px;justify-content:center;}
+.soc-btn:hover{border-color:currentColor;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.1);}
+.soc-btn.fb:hover{color:#1877F2;}
+.soc-btn.ig:hover{color:#E1306C;}
+.soc-btn.tt:hover{color:#000;}
+.soc-btn.yt:hover{color:#FF0000;}
+.soc-btn.wa{background:var(--white);border-color:#25D366;color:#25D366;}
+.soc-btn.wa:hover{background:#25D366;color:#fff;}
+.soc-icon{width:22px;height:22px;flex-shrink:0;}
+
+/* CONTACT */
+.contact-bar{background:var(--red-dark);padding:60px 40px;text-align:center;}
+.contact-bar h2{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:300;color:var(--white);margin-bottom:8px;}
+.contact-bar .sub{font-size:14px;color:rgba(255,255,255,.5);margin-bottom:32px;font-weight:300;}
+.contact-details{display:flex;justify-content:center;gap:44px;flex-wrap:wrap;}
+.cd-item{text-align:center;}
+.cd-icon{font-size:22px;margin-bottom:8px;}
+.cd-label{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-lt);margin-bottom:6px;display:block;}
+.cd-val{font-size:14px;color:rgba(255,255,255,.8);font-weight:300;}
+.cd-val a{color:rgba(255,255,255,.8);text-decoration:none;transition:.2s;}
+.cd-val a:hover{color:var(--gold-lt);}
+
+/* WHATSAPP FLOAT */
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:1000;background:#25D366;border-radius:50%;width:58px;height:58px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);text-decoration:none;transition:.3s;}
+.wa-float:hover{transform:scale(1.1);box-shadow:0 8px 28px rgba(37,211,102,.5);}
+.wa-float svg{width:32px;height:32px;}
+
+/* FOOTER */
+footer{background:#111;color:rgba(255,255,255,.4);text-align:center;padding:26px 20px;font-size:13px;font-weight:300;}
+footer span{color:var(--gold-lt);}
+
+/* MOBILE */
+@media(max-width:768px){
+  nav{padding:0 16px;}
+  .hamburger{display:flex;}
+  .nav-links{display:none;position:fixed;top:70px;left:0;right:0;bottom:0;background:var(--white);flex-direction:column;padding:24px 20px;gap:4px;overflow-y:auto;box-shadow:0 4px 20px rgba(0,0,0,.15);}
+  .nav-links.open{display:flex;}
+  .nav-links a{padding:14px 20px;border-radius:4px;border-bottom:1px solid var(--border);font-size:14px;}
+  .nav-cta{text-align:center;margin-top:12px;}
+  .hero h1{font-size:38px;}
+  .hero .sub{font-size:14px;}
+  .hero-btns{flex-direction:column;align-items:center;}
+  .btn-red,.btn-outline{width:100%;max-width:280px;text-align:center;}
+  .stats{gap:0;}
+  .stat-item{padding:14px 16px;border-right:none;border-bottom:1px solid rgba(255,255,255,.1);width:50%;}
+  .stat-item:nth-child(odd){border-right:1px solid rgba(255,255,255,.1);}
+  .col-grid{grid-template-columns:1fr;}
+  .about-inner{grid-template-columns:1fr;gap:36px;}
+  .usp-grid{grid-template-columns:1fr;}
+  .testi-grid{grid-template-columns:1fr;}
+  .stores-grid{grid-template-columns:1fr;}
+  .store-imgs{height:160px;}
+  .social-icons{gap:10px;}
+  .soc-btn{min-width:140px;font-size:12px;padding:11px 16px;}
+  .contact-details{gap:28px;}
+  section{padding:56px 20px;}
+  .social-sec{padding:56px 20px;}
+  .contact-bar{padding:50px 20px;}
+  .wa-float{bottom:20px;right:16px;width:52px;height:52px;}
+}
+@media(max-width:400px){
+  .hero h1{font-size:32px;}
+  .stat-item{width:100%;border-right:none;}
+  .stat-item:nth-child(odd){border-right:none;}
+}
+</style>
+</head>
+<body>
+
+<!-- WHATSAPP FLOAT BUTTON -->
+<a href="https://wa.me/94772911887" target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16 2C8.268 2 2 8.268 2 16c0 2.46.662 4.763 1.818 6.745L2 30l7.47-1.788A13.94 13.94 0 0016 30c7.732 0 14-6.268 14-14S23.732 2 16 2z" fill="#fff"/>
+    <path d="M22.003 19.178c-.305-.152-1.8-.887-2.08-.988-.279-.1-.482-.152-.685.152-.203.305-.785.988-.962 1.19-.178.203-.355.229-.66.076-.305-.152-1.288-.474-2.452-1.51-.906-.807-1.518-1.803-1.696-2.108-.178-.305-.019-.47.134-.621.137-.136.305-.355.457-.533.152-.178.203-.305.305-.508.102-.203.051-.381-.025-.533-.076-.152-.685-1.65-.938-2.259-.247-.593-.498-.513-.685-.522l-.584-.01c-.203 0-.533.076-.812.381-.279.305-1.066 1.04-1.066 2.538s1.092 2.944 1.244 3.147c.152.203 2.148 3.28 5.207 4.598.728.314 1.296.502 1.738.643.73.232 1.395.199 1.92.121.586-.087 1.8-.735 2.054-1.445.254-.71.254-1.318.178-1.446-.075-.127-.278-.203-.583-.355z" fill="#B51C2C"/>
+  </svg>
+</a>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-left">
+    <img class="logo-img" src="logo.png" alt="Shalwar Brides"
+      onerror="this.style.display='none';document.getElementById('nav-text').style.display='block'">
+    <div class="nav-logo-text" id="nav-text" style="display:none;">
+      <div class="brand-main">Shalwar Brides</div>
+      <div class="brand-sub">Negombo · Colombo</div>
+    </div>
+  </div>
+  <button class="hamburger" id="ham" aria-label="Menu" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links">
+    <a href="#home" onclick="document.querySelector('.nav-links').classList.remove('open');document.getElementById('ham').classList.remove('open')">Home</a>
+    <a href="#collections" onclick="document.querySelector('.nav-links').classList.remove('open');document.getElementById('ham').classList.remove('open')">Collections</a>
+    <a href="#about" onclick="document.querySelector('.nav-links').classList.remove('open');document.getElementById('ham').classList.remove('open')">About</a>
+    <a href="#stores" onclick="document.querySelector('.nav-links').classList.remove('open');document.getElementById('ham').classList.remove('open')">Stores</a>
+    <a href="https://wa.me/94772911887" target="_blank" class="nav-cta">WhatsApp Us</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-pre">Sri Lanka's Premier Bridal Wear Destination</div>
+    <h1>Where Every Bride<br>Finds Her <em>Perfect</em> Look</h1>
+    <p class="sub">From luxury Banarasi sarees to exquisite bridal lehengas — curated with love for the modern Sri Lankan bride. Two showrooms in Colombo &amp; Negombo, open every day.</p>
+    <div class="hero-btns">
+      <a href="#collections" class="btn-red">Explore Collections</a>
+      <a href="#stores" class="btn-outline">Find a Store</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat-item"><span class="stat-num">261K+</span><span class="stat-lbl">Facebook Followers</span></div>
+  <div class="stat-item"><span class="stat-num">2</span><span class="stat-lbl">Showroom Locations</span></div>
+  <div class="stat-item"><span class="stat-num">10AM–9PM</span><span class="stat-lbl">Open Every Day</span></div>
+  <div class="stat-item"><span class="stat-num">100%</span><span class="stat-lbl">Customer Satisfaction</span></div>
+  <div class="stat-item"><span class="stat-num">500+</span><span class="stat-lbl">Exclusive Designs</span></div>
+</div>
+
+<!-- COLLECTIONS -->
+<section class="collections" id="collections">
+  <div class="sec-head">
+    <div class="sec-pre">Our Collections</div>
+    <h2>Dressed for Every Occasion</h2>
+    <div class="sec-line"></div>
+  </div>
+  <div class="col-grid">
+
+    <div class="col-card">
+      <img class="col-img" src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&q=80" alt="Bridal Sarees">
+      <div class="col-body">
+        <h3>Bridal Sarees</h3>
+        <p>Luxury Banarasi, Pattu &amp; embroidered silk sarees crafted for your most memorable moments.</p>
+        <span class="col-tag">Bridal · Festive</span>
+      </div>
+    </div>
+
+    <div class="col-card">
+      <img class="col-img" src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=600&q=80" alt="Lehengas">
+      <div class="col-body">
+        <h3>Lehengas</h3>
+        <p>Stunning bridal &amp; festive lehengas with intricate embellishments — from classic reds to modern pastels.</p>
+        <span class="col-tag">Bridal · Wedding</span>
+      </div>
+    </div>
+
+    <div class="col-card">
+      <img class="col-img" src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=600&q=80" alt="Shalwar Kameez">
+      <div class="col-body">
+        <h3>Shalwar Kameez</h3>
+        <p>Designer shalwar suits combining comfort with style — perfect for daily wear and special occasions.</p>
+        <span class="col-tag">Daily · Festive</span>
+      </div>
+    </div>
+
+    <div class="col-card">
+      <img class="col-img" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=600&q=80" alt="Bridal Gowns">
+      <div class="col-body">
+        <h3>Bridal Gowns &amp; Frocks</h3>
+        <p>Elegant bridal gowns blending traditional aesthetics with contemporary designs for your wedding day.</p>
+        <span class="col-tag">Bridal · Exclusive</span>
+      </div>
+    </div>
+
+    <div class="col-card">
+      <img class="col-img" src="https://images.unsplash.com/photo-1631122256766-44c18fc0c00f?w=600&q=80" alt="Printed Sarees">
+      <div class="col-body">
+        <h3>Printed Sarees</h3>
+        <p>Light, vibrant &amp; colourful printed sarees for every occasion — floral, geometric &amp; contemporary prints.</p>
+        <span class="col-tag">Everyday · Casual</span>
+      </div>
+    </div>
+
+    <div class="col-card">
+      <img class="col-img" src="https://images.unsplash.com/photo-1596387451937-2def10ef0b3c?w=600&q=80" alt="Embroidery Sarees">
+      <div class="col-body">
+        <h3>Embroidery Sarees</h3>
+        <p>Richly embroidered sarees with zari, zardozi &amp; thread work — where artistry meets elegance.</p>
+        <span class="col-tag">Premium · Festive</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="sec-head">
+    <div class="sec-pre">Our Story</div>
+    <h2>About Shalwar Brides</h2>
+    <div class="sec-line"></div>
+  </div>
+  <div class="about-inner">
+    <div class="about-text">
+      <p>Shalwar Brides is <strong>Sri Lanka's ultimate destination</strong> for bridal and ethnic ladies wear, with showrooms in <strong>Colombo Pettah</strong> and <strong>Negombo</strong>. We are passionate about helping every woman — especially brides — find an outfit that makes them feel extraordinary.</p>
+      <p>Our collection is thoughtfully curated from <strong>luxury Banarasi sarees</strong> to <strong>exquisite lehengas</strong>, each piece selected with dedication to quality, uniqueness, and affordability.</p>
+      <p>We believe <strong>affordable luxury is not a compromise</strong> — it is our promise. Every customer is treated with warmth, patience, and genuine care.</p>
+    </div>
+    <div class="usp-grid">
+      <div class="usp"><h4>Exclusive Designs</h4><p>Unique to our store — ensuring you find something truly special.</p></div>
+      <div class="usp"><h4>Personalized Service</h4><p>Staff help with fitting, selection &amp; exchange — however long it takes.</p></div>
+      <div class="usp"><h4>Affordable Luxury</h4><p>High quality at prices better than the market. Trusted by thousands.</p></div>
+      <div class="usp"><h4>Open Every Day</h4><p>7 days a week, 10 AM to 9 PM — including Saturdays, Sundays &amp; holidays.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="sec-head">
+    <div class="sec-pre" style="color:var(--gold-lt);">What Our Customers Say</div>
+    <h2>Real Reviews, Real Brides</h2>
+    <div class="sec-line" style="background:var(--gold-lt);"></div>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p>"Best place for bridal sarees and shalwars. Better prices than Aslam market. Good customer service — they give plenty of options. Different qualities and prices based on what we want. Highly recommended!"</p>
+      <div class="testi-name">— Thejana Yasas</div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p>"Very good place for all types of sarees and lehengas. We needed to exchange a lehenga — they were happy to help even though it was a little delayed. The customer care is genuinely exceptional."</p>
+      <div class="testi-name">— Chann Ravendu</div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p>"Wherever you are in Sri Lanka, it's worth the visit — especially for weddings. Rare, unique designs at unbelievably low prices. The staff let me try 10 sarees and 3 bridal dresses without any hesitation!"</p>
+      <div class="testi-name">— Benazeer Farah</div>
+    </div>
+  </div>
+</section>
+
+<!-- STORES -->
+<section class="stores" id="stores">
+  <div class="sec-head">
+    <div class="sec-pre">Visit Us</div>
+    <h2>Our Showrooms</h2>
+    <div class="sec-line"></div>
+  </div>
+  <div class="stores-grid">
+
+    <div class="store-card">
+      <div class="store-imgs">
+        <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=400&q=80" alt="Negombo Showroom">
+        <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=400&q=80" alt="Negombo Store Interior">
+      </div>
+      <div class="store-info">
+        <span class="store-badge">Showroom 01</span>
+        <h3>Negombo</h3>
+        <p><span>Address:</span> 178, 180 Main St, Negombo 11500, Sri Lanka</p>
+        <p><span>Hours:</span> Mon – Sun: 10:00 AM – 9:00 PM</p>
+        <p><span>Phone:</span> <a href="tel:+94772911887" style="color:var(--red);font-weight:600;text-decoration:none;">+94 77 291 1887</a></p>
+        <a href="https://maps.app.goo.gl/sMA6zbWYKkd1GXNc6" target="_blank" class="map-btn">📍 Open in Google Maps →</a>
+      </div>
+    </div>
+
+    <div class="store-card">
+      <div class="store-imgs">
+        <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=400&q=80" alt="Colombo Showroom">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=400&q=80" alt="Colombo Store Interior">
+      </div>
+      <div class="store-info">
+        <span class="store-badge">Showroom 02</span>
+        <h3>Colombo Pettah</h3>
+        <p><span>Address:</span> 192, 2nd Cross Street, Colombo 01100, Sri Lanka</p>
+        <p><span>Hours:</span> Mon – Sun: 10:00 AM – 9:00 PM</p>
+        <p><span>Phone:</span> <a href="tel:+94772911887" style="color:var(--red);font-weight:600;text-decoration:none;">+94 77 291 1887</a></p>
+        <a href="https://maps.app.goo.gl/8vaR6pEnWmcLQ3eV6" target="_blank" class="map-btn">📍 Open in Google Maps →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SOCIAL MEDIA -->
+<div class="social-sec">
+  <h2>Follow Our Journey</h2>
+  <p class="sub">Join 261,000+ followers for the latest collections, offers &amp; bridal inspiration</p>
+  <div class="social-icons">
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/ShalwarBridesLk/" target="_blank" class="soc-btn fb">
+      <svg class="soc-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.97h-1.513c-1.491 0-1.956.931-1.956 1.886v2.27h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" fill="#1877F2"/>
+      </svg>
+      Facebook
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/shalwarbride/" target="_blank" class="soc-btn ig">
+      <svg class="soc-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <defs><radialGradient id="ig-grad" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs>
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="url(#ig-grad)"/>
+      </svg>
+      Instagram
+    </a>
+
+    <!-- TikTok -->
+    <a href="https://www.tiktok.com/@shalwarbrides" target="_blank" class="soc-btn tt">
+      <svg class="soc-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.54V6.78a4.84 4.84 0 01-1.02-.09z" fill="#000"/>
+      </svg>
+      TikTok
+    </a>
+
+    <!-- YouTube -->
+    <a href="https://www.youtube.com/channel/UCHdR2fqb6Ir7mxKhseo19jw" target="_blank" class="soc-btn yt">
+      <svg class="soc-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" fill="#FF0000"/>
+      </svg>
+      YouTube
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/94772911887" target="_blank" class="soc-btn wa">
+      <svg class="soc-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="#25D366"/>
+      </svg>
+      WhatsApp
+    </a>
+
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="contact-bar" id="contact">
+  <h2>Get In Touch</h2>
+  <p class="sub">We're happy to help — reach us on WhatsApp, phone or email</p>
+  <div class="contact-details">
+    <div class="cd-item">
+      <div class="cd-icon">📞</div>
+      <span class="cd-label">Phone / WhatsApp</span>
+      <div class="cd-val"><a href="tel:+94772911887">+94 77 291 1887</a></div>
+    </div>
+    <div class="cd-item">
+      <div class="cd-icon">✉️</div>
+      <span class="cd-label">Email</span>
+      <div class="cd-val"><a href="mailto:shalwarbrides@gmail.com">shalwarbrides@gmail.com</a></div>
+    </div>
+    <div class="cd-item">
+      <div class="cd-icon">🕐</div>
+      <span class="cd-label">Opening Hours</span>
+      <div class="cd-val">Mon – Sun: 10 AM – 9 PM</div>
+    </div>
+    <div class="cd-item">
+      <div class="cd-icon">🌐</div>
+      <span class="cd-label">Website</span>
+      <div class="cd-val"><a href="https://www.shalwarbrides.com">www.shalwarbrides.com</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 <span>Shalwar Brides</span>. All Rights Reserved. &nbsp;·&nbsp; Colombo &amp; Negombo, Sri Lanka</p>
+</footer>
+
+</body>
+</html>
